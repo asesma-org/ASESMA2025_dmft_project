@@ -16,7 +16,7 @@ docker pull cartaalberto/solid_dmft:3.3.x
 
 Add this to the bashrc
 ```
-alias triqs_qe="docker run -p 8888:8888 --rm -it --shm-size=4g -e USER_ID=`id -u` -e GROUP_ID=`id -g` -v /home:/home triqs_openmpi:3.3.x bash"
+alias triqs_qe="docker run -p 8888:8888 --rm -it --shm-size=4g -e USER_ID=`id -u` -e GROUP_ID=`id -g` -v /home:/home cartaalberto/solid_dmft:3.3.x bash"
 ```
 
 To run a jupyter notebook inside your container
